@@ -1,8 +1,19 @@
-import './App.css'
-import Teste from './teste'
+import Projetos from './containers/Projetos'
+import Sidebar from './containers/Sidebar'
+import Sobre from './containers/Sobre'
+import EstiloGlobal from './styles'
 
 function App() {
-  return <Teste></Teste>
+  return (
+    <>
+      <EstiloGlobal></EstiloGlobal>
+      <Sidebar />
+      <main>
+        <Sobre></Sobre>
+        <Projetos></Projetos>
+      </main>
+    </>
+  )
 }
 
 export default App
